@@ -9,6 +9,7 @@
 <body>
     <div class="sidebar">
         <img src="purple-sky.jpg">
+        <p id="credit">Photo by eberhardgross on Unsplash</p>
     </div>
     <div class="form-container">
         <div class="header">
@@ -54,5 +55,19 @@
             </div>
         </form>
     </div>
+
+    <svg>
+        <filter id='noiseFilter'>
+            <feTurbulence 
+            type='fractalNoise' 
+            baseFrequency='0.07' 
+            numOctaves='3'
+            stitchTiles='stitch'/>
+            <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+            <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+            <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+        </filter>
+    </svg>
+
 </body>
 </html>
