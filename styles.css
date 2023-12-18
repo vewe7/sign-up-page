@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
-
 body {
     display: flex;
     margin: 0;
@@ -7,7 +5,7 @@ body {
     height: 100%;
     background-color: #ecebff;
     color: #333333;
-    font-family: 'Sometype Mono', monospace;
+    font-family: 'Lato', sans-serif;
     overflow: hidden;
 }
 
@@ -16,6 +14,15 @@ img {
     height: 100%;
     object-fit: cover;
     filter: url(#noiseFilter);
+}
+
+label {
+    color: #c8b6ff;
+    font-size: 14px;
+}
+
+input {
+    width: 200px;
 }
 
 input, label {
@@ -39,8 +46,20 @@ svg {
     height: 0;
 }
 
+a, a:visited, a:active {
+    color: inherit
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 650px;
+    row-gap: 15px;
+}
+
 .input-block {
-    float: left;
+    flex-basis: 48%;
 }
 
 .sidebar {
@@ -56,37 +75,27 @@ svg {
 }
 
 .header {
-    margin: 120px 30px 80px;
-    font-size: 28px;
+    padding: 100px 40px 80px;
 }
 
-.header, h1, button {
-    text-shadow: 0 0 3px #c8b6ff;
+.header, h1 {
+    font-size: 24px;
 }
-
-label {
-    color: #c8b6ff;
-}
-
 
 .middle {
     flex: 1;
-    padding: 20px;
+    padding-left: 40px;
     padding-top: 5px;
     padding-bottom: 40px;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 3px 5px #ccc;
 }
 
-.input-container {
-    display: flex;
-    gap: 50px;
-    flex-flow: row wrap;
-}
-
 #credit {
     position: absolute;
     bottom: 0;
-    left: 5px;
-    opacity: 0.6;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0.4;
 }
+
