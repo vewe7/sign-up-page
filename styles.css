@@ -23,6 +23,18 @@ label {
 
 input {
     width: 200px;
+    padding: 3px;
+    border: 2px solid #cccccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.valid {
+    border-color: green;
 }
 
 input, label {
@@ -38,7 +50,12 @@ textarea {
 }
 
 button {
-    margin: 20px;
+    margin: 30px 40px;
+    padding: 8px 24px;
+    border-radius: 5px;
+    border: none;
+    background-color: #c8b6ff;
+    color: white;
 }
 
 svg {
@@ -48,6 +65,15 @@ svg {
 
 a, a:visited, a:active {
     color: inherit
+}
+
+#login {
+    margin-left: 40px;
+}
+
+#login-link {
+    text-decoration: none;
+    color: #c8b6ff;
 }
 
 .input-container {
@@ -76,6 +102,7 @@ a, a:visited, a:active {
 
 .header {
     padding: 100px 40px 80px;
+    width: 600px;
 }
 
 .header, h1 {
@@ -91,6 +118,18 @@ a, a:visited, a:active {
     box-shadow: 0px 3px 5px #ccc;
 }
 
+#logo {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 48px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 #credit {
     position: absolute;
     bottom: 0;
@@ -98,4 +137,3 @@ a, a:visited, a:active {
     transform: translate(-50%);
     opacity: 0.4;
 }
-
